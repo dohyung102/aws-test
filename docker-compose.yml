@@ -3,14 +3,14 @@ services:
   fastapi:
     build:
       context: .
-      dockerfile: ./backend/Dockerfile
+      dockerfile: ./backend/dockerfile
     image: fastapi-image
     container_name: fastapi-container
 
   nginx:
     build:
       context: .
-      dockerfile: ./nginx/Dockerfile
+      dockerfile: ./nginx/dockerfile
     image: nginx-image
     container_name: nginx-container
     ports:
